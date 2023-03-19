@@ -42,4 +42,4 @@
 
 ## Видеоподсказка
   
-
+<script async id="asciicast-568193" src="https://asciinema.org/a/568193.js"></script>
