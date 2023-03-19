@@ -11,14 +11,14 @@
 ## Инициализация
 1. Клонирование репозитория.
    ```sh
-   $ git clone git@github.com:AlPetrovv/test_dadata.git
+   git clone git@github.com:AlPetrovv/test_dadata.git
    ```
    
 2. Активация виртуального окружения.
    ```sh
-   $ cd test_dadata
-   $ python3.10 -m venv venv
-   $ source venv/bin/activate если linux .\venv\Scripts\activate если Windows
+   cd test_dadata
+   python3.10 -m venv venv
+   source venv/bin/activate если linux .\venv\Scripts\activate если Windows
     ```
     
 3. Скачивание зависисмотей.
@@ -28,7 +28,7 @@
    
 ## Запуск
  ```sh
-   $ python3 app/manage.py
+   python3 app/manage.py
   ```
 ## Интерфейс
 
