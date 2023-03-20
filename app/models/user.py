@@ -17,7 +17,7 @@ class User(Base):
     id: int = sa.Column(sa.Integer(), primary_key=True, autoincrement=True)
     token: str = sa.Column(sa.String(250), nullable=False, unique=True)
     language = sa.Column(ChoiceType(LANGUAGES), nullable=False)
-    secret_key: str = sa.Column(sa.String(250), nullable=False, unique=True)
+
 
     def __str__(self):
         return f"User {self.id}"
