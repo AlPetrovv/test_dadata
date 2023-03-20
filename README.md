@@ -21,7 +21,7 @@
    source venv/bin/activate если linux .\venv\Scripts\activate если Windows
     ```
     
-3. Скачивание зависисмотей.
+3. Скачивание зависимоcтей.
     ```sh
    (venv) $ pip install -r requirements.txt
    ```
