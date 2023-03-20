@@ -18,7 +18,6 @@ class User(Base):
     token: str = sa.Column(sa.String(250), nullable=False, unique=True)
     language = sa.Column(ChoiceType(LANGUAGES), nullable=False)
 
-
     def __str__(self):
         return f"User {self.id}"
 

@@ -1,3 +1,5 @@
+import pprint
+
 from sqlalchemy import update
 from errors.user_error import CreateUserError, ChangeUserDataError
 from models.database import session
@@ -64,10 +66,14 @@ def main():
             current_place = input("Место: ")
             if current_place not in places.keys():
                 print("В списке нет выбранного вами места")
+                continue
             geolocate: dict = u.get_geolocate(places[current_place])
             lat, lon = geolocate.get("data").get("geo_lat"), geolocate.get("data").get("geo_lon")
             if lat and lon:
                 print(f"Ваши координаты: \nШирота: {lat}; Долгота: {lon}")
+            else:
+                pprint.pprint(geolocate)
+                print("Координаты не найдены, попробуйте ввести место точнее(улица, метро, дом)")
         elif index not in ["exit", 'выход']:
             print("Неправильный ввод действия")
 
