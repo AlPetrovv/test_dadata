@@ -72,7 +72,6 @@ def main():
             if lat and lon:
                 print(f"Ваши координаты: \nШирота: {lat}; Долгота: {lon}")
             else:
-                pprint.pprint(geolocate)
                 print("Координаты не найдены, попробуйте ввести место точнее(улица, метро, дом)")
         elif index not in ["exit", 'выход']:
             print("Неправильный ввод действия")
